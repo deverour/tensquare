@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_fentan" />
+        <module name="tensquare_eureka" />
+        <module name="tensquare_encrypt" />
+        <module name="tensquare_article" />
+        <module name="testset" />
+        <module name="tensquare_common" />
+        <module name="tensquare_user" />
+        <module name="tensquare_notice" />
+        <module name="netty_demo" />
+        <module name="mongo_demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot_fentan" target="1.5" />
+      <module name="testset" target="1.8" />
+      <module name="tower_order" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mongo_demo" options="-parameters" />
+      <module name="netty_demo" options="-parameters" />
+      <module name="tensquare_article" options="-parameters" />
+      <module name="tensquare_common" options="-parameters" />
+      <module name="tensquare_encrypt" options="-parameters" />
+      <module name="tensquare_eureka" options="-parameters" />
+      <module name="tensquare_notice" options="-parameters" />
+      <module name="tensquare_parent" options="-parameters" />
+      <module name="tensquare_user" options="-parameters" />
+      <module name="testset" options="-parameters" />
+      <module name="tower_order" options="-parameters" />
+    </option>
+  </component>
+</project>

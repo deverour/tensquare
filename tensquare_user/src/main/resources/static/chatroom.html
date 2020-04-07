@@ -1,0 +1,75 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="edge" />
+	  <title>聊天室</title>
+	  <script src="./js/jquery-1.12.3.min.js"></script>
+	  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	  <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <style>
+		  body{margin-top:5px;}
+	  </style>
+
+	  <script src="./WebIMConfig.js"></script>
+
+	  <script src="./js/webimSDK3.0.6.js"></script>
+	  <script src="./js/EMedia_x1v1.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-3">
+    		<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">用户注册或登录</h3>
+				  </div>
+				  <div class="panel-body">
+				    <div class="list-group">
+					 <a href="#" class="list-group-item">你好，${sessionScope.username}</a>
+					 <a href="logout" class="list-group-item">退出</a>
+					</div>
+				  </div>
+				</div>
+    			<div class="panel panel-primary" id="online">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">当前在线的其他用户</h3>
+				  </div>
+				  <div class="panel-body">
+				    <div class="list-group" id="users">
+					</div>
+				  </div>
+				</div>
+				<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">群发系统广播</h3>
+				  </div>
+				  <div class="panel-body">
+				    <input type="text" class="form-control"  id="msg" /><br>
+				    <button id="broadcast" type="button" class="btn btn-primary">发送</button>
+				  </div>
+				</div>
+    		</div>
+  			<div class="col-md-9">
+  				<div class="panel panel-primary">
+				  <div class="panel-heading">
+				    <h3 class="panel-title" id="talktitle"></h3>
+				  </div>
+				  <div class="panel-body">
+				    <div class="well" id="log-container" style="height:400px;overflow-y:scroll">
+				    
+				    </div>
+				    	<input type="text" id="myinfo" class="form-control col-md-12" /> <br>
+				    	<button id="send" type="button" class="btn btn-primary">发送</button>
+				    </div>
+				</div>
+  			</div>
+    	</div>
+    </div> 
+	<script>
+
+	</script>
+  </body>
+</html>
